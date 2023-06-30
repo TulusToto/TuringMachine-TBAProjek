@@ -6,8 +6,10 @@ Turing Machine kalkulator dirancang khusus untuk melakukan operasi aritmetika da
 
 Projek ini dikerjakan untuk menyelesaikan salah satu projek mata kuliah yaitu "Teori Bahasa dan Otomata" yang diberikan oleh Ibu Sari Widya Sihwi, S.Kom, MTI.
 
-Created By : Group 3
+**Created By : Group 3**
 - Rio Saputro (M0521065)
 - Syah Rizan Nazri Muhammad (M0521075)
 - Teuku Muharram Rizqullah (M0521076)
 - Tulus Toto Raharjo (M0521078)
+
+![Turing Machine](https://example.com/path/to/image.png)
