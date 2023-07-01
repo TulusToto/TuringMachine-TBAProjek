@@ -23,8 +23,9 @@ var trTape3 = document.getElementById("turing_tape3"); //Tape3
 var dispState = document.getElementById("show-state-now"); //Tampilkan State
 var dispAnswer = document.getElementById("show-answer"); //Tampilkan nilai akhir
 var stepController = document.getElementById("controller_step"); //Step berikutnya
+var instantController = document.getElementById("controller_instant"); //Step berikutnya
 var initController = document.getElementById("init_step"); //Submit
-
+var accept = false;
 function init() {
   trDelete(); //Clear Turing
 
@@ -281,6 +282,7 @@ function displayState(str) {
 
 //Clear Tape
 function trDelete() {
+    accept = false;
   dispState.textContent = "null";
   dispAnswer.value = "0";
   trTape.innerHTML = "";
@@ -368,11 +370,22 @@ function step() {
   //q(15) Accept State
 
   if (state == 5 || state == 9 || state == 10 || state == 15 || state == 19) {
+    accept = true;
     displayState("Selesai");
     displayAnswer();
     stepController.disabled = true;
   }
 }
+
+function instant() {
+    if (!accept) {
+      setTimeout(function () {
+        step();
+        instant(); // Call instant() again after the interval
+      }, 25);
+    }
+  }
+
 
 function go(
   nowState,
