@@ -169,7 +169,7 @@ function step(){
     //Accept State Accept Case X - X = X or X - 0
 
     //Case Negative (Y)
-    go(12, 'X', 12, 'X', 'R', 0 );
+    go(12, 'X', 12, 'X', 'R', 0 );//Tambahan
     go(12, 'Y', 12, 'Y', 'R', 0 );
     go(12, '1', 12, '1', 'R', 0 );
     go(12, 'B', 13, 'B', 'L', 0 );
