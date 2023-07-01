@@ -1,15 +1,202 @@
-
-.turing-tape > *{
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin-top: 50px;
+    max-width: 800px;
+  }
+  
+  .input-group-text {
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 207, 17, 0.877);
+  }
+  
+  #show-state-now {
+    background-color: #e9ecef;
+    color: #343a40;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .turing-tape > * {
     color: black;
-    background-color: white;
-    padding: .5em 1em;
-    font-size: 14pt;
+    background-color: #f8f9fa;
+    padding: 1em;
+    font-size: 16px;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid #ced4da;
     border-radius: 8px;
-}
-.state-active{
+    transition: color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .state-active {
     color: white;
-    background-color: black;
+    background-color: #17a2b8;
     border-radius: 8px;
-}
+    animation: pulse 1s infinite;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    color: #343a40;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  
+  .input-group {
+    margin-bottom: 30px;
+  }
+  
+  .input-group-text {
+    font-size: 18px;
+  }
+  
+  .input-group input[type="number"] {
+    font-size: 18px;
+    border-color: #007bff;
+    border-radius: 4px;
+  }
+  
+  #controller_init {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  #controller_step {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  #show-answer {
+    font-size: 18px;
+    border-color: #007bff;
+    border-radius: 4px;
+  }
+  
+  #show-answer:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #007bff;
+  }
+  
+  .d-flex.justify-content-around.align-items-center.mx-5.mt-5.px-5.pt-5.mb-2.pb-2 {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .d-flex.justify-content-center.flex-column {
+    margin-top: 50px;
+  }
+  
+  .border.rounded-3.bg-light.p-2.text-md-center.align-middle#show-state-now {
+    width: 240px;
+    background-color: #e9ecef;
+    color: #343a40;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .border.rounded-3.bg-light.p-2.text-md-center.align-middle#show-state-now p {
+    margin: 0;
+  }
+  
+  .bg-secondary.mx-auto {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  #turing_tape {
+    max-width: 64rem;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #turing_tape > * {
+    color: black;
+    background-color: #ffffff;
+    padding: 1em;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  #turing_tape > *:last-child {
+    margin-right: 0;
+  }
+  
+  #turing_tape > *:first-child {
+    margin-left: 10px;
+  }
+  
+  #turing_tape > *:only-child {
+    margin: 0;
+  }
+  
+  #turing_tape > *:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .d-flex.flex-wrap {
+    justify-content: center;
+  }
+  
