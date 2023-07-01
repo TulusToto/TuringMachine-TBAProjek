@@ -8,7 +8,7 @@ Projek ini dikerjakan untuk menyelesaikan salah satu projek mata kuliah yaitu "T
 
 **Operasi aritmatika dasar yang kami sediakan**
 - <a href="addition.html">Addition</a>
-- Subtraction
+- <a href="subtraction.html">Subtraction</a>
 
 **Created By : Group 3**
 - Rio Saputro (M0521065)
