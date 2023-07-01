@@ -79,7 +79,7 @@ function displayAnswer(){
         if(turingVal[i].val == "0"){
             result++;
         }
-        if(turingVal[i].val == "0"){
+        if(turingVal[i].val == "1"){
             result--;
         }
     }
