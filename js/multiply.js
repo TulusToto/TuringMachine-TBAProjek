@@ -79,7 +79,7 @@ function init(){
         turingVal.push(new createState("B"));
         trTape.childNodes[1].classList.add("state-active");
     }else{
-        alert('Nilai tidak valid');
+
     }
     j=2;
     state=0;
@@ -123,6 +123,11 @@ function trDelete(){
     turingVal = [];
     result = 0;
     stepController.disabled = false;
+    if (nval1.value === '0' || nval2.value === '0') {
+        dispAnswer.value = '0';
+        return;
+      }
+    
 }
 
 function step(){
