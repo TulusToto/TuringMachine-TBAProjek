@@ -12,4 +12,4 @@ Projek ini dikerjakan untuk menyelesaikan salah satu projek mata kuliah yaitu "T
 - Teuku Muharram Rizqullah (M0521076)
 - Tulus Toto Raharjo (M0521078)
 
-![Turing Machine](https://example.com/path/to/image.png)
+![Turing Machine](https://th.bing.com/th/id/R.a5f4a676d88c2ada96c5a046ca1c796e?rik=8l9%2buqjXqCAvug&riu=http%3a%2f%2fraganwald.com%2fassets%2fimages%2ftooling%2f1200px-Turing_Machine_Model_Davey_2012.jpg&ehk=CGi8zDVqhPhoKsKrNflHozfhKssEw0GwqJW%2bJjJ0zG0%3d&risl=&pid=ImgRaw&r=0)
