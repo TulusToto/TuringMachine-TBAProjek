@@ -10,43 +10,29 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="css/division.css" rel="stylesheet" />
-    <title>TM Group3 | Division</title>
+    <link href="css/factorial.css" rel="stylesheet" />
+    <title>TM Group3 | Factorial</title>
   </head>
   <body>
     <a class="btn btn-primary m-3" href="index.html">Back</a>
-    <h1 style="text-align: center" class="mt-5">Pembagian</h1>
+    <h1 style="text-align: center" class="mt-5">Faktorial</h1>
     <div
       class="d-flex justify-content-around align-items-center mx-5 mt-5 px-5 pt-5 mb-2 pb-2"
     >
       <div class="input-group mb-3 p-3">
         <span class="input-group-text" id="inputGroup-sizing-default"
-          >Input 1</span
+          >Input</span
         >
         <input
-          type="number"
+          type="tel"
           name="val1"
           id="val1"
           class="form-control"
+          min="1"
           placeholder="value ..."
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-default"
-        /><br>
-
-        <span class="input-group-text" id="inputGroup-sizing-default"
-            >Input 2</span
-            >
-        <input
-            type="number"
-            name="val2"
-            id="val2"
-            class="form-control"
-            placeholder="value ..."
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
         />
-
-
       </div>
       <input
         class="btn btn-primary p-3 m-2"
@@ -62,14 +48,6 @@
         onclick="step()"
       >
         Step
-      </button>
-      <button
-        class="btn btn-primary p-3"
-        id="controller_instant"
-        type="button"
-        onclick="instant()"
-      >
-        Instant
       </button>
       <div class="input-group mb-3 p-3">
         <span class="input-group-text" id="inputGroup-sizing-default"
@@ -100,18 +78,8 @@
           style="max-width: 64rem"
           class="rounded-3 d-flex turing-tape overflow-auto flex-nowrap"
         ></div>
-        <div
-        id="turing_tape2"
-        style="max-width: 64rem"
-        class="rounded-3 d-flex turing-tape overflow-auto flex-nowrap"
-      ></div>
-      <div
-      id="turing_tape3"
-      style="max-width: 64rem"
-      class="rounded-3 d-flex turing-tape overflow-auto flex-nowrap"
-    ></div>
       </div>
     </div>
-    <script src="js/division.js"></script>
+    <script src="js/factorial.js"></script>
   </body>
 </html>
