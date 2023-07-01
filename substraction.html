@@ -1,46 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/substraction.css">
-    <title>TR Machine | Substraction</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/substraction.css">
+        
+        <title>TR Machine | Substraction</title>
 
-</head>
-<body>
-    <div class="container">
-        <a class="btn btn-primary mb-4" href="index.html">Back</a>
-        <div class="card shadow">
-            <div class="card-body"> 
-                <h1 class="text-center mb-4">Substraction</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Input1</span>
-                            <input type="text" name="val1" id="val1" class="form-control" placeholder="5C2" aria-label="Input" aria-describedby="inputGroup-sizing-default">
+    </head>
+    <body>
+        <div class="container">
+            <a class="btn btn-primary mb-4" href="index.html">Back</a>
+            <div class="card shadow">
+                <div class="card-body"> 
+                    <h1 class="text-center mb-4">Substraction</h1>
+                    <!-- Input -->
+                    <div class="row">
+                        <!-- Value -->
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Input1</span>
+                                <input type="text" name="val1" id="val1" class="form-control" placeholder="value1Cvalue2" aria-label="Input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="col-md-6">
+                            <input type="button" class="btn btn-primary btn-lg mb-3" id="controller_init" onclick="init()" value="Submit"/>
+                            <button class="btn btn-primary btn-lg mb-3" id="controller_step" type="button" onclick="step()">Step</button>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <button class="btn btn-primary btn-lg mb-3" id="controller_init" onclick="init()">Submit</button>
-                        <button class="btn btn-primary btn-lg mb-3" id="controller_step" type="button" onclick="step()">Step</button>
+                    <!-- Output -->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Output</span>
+                        <input type="text" class="form-control" id="show-answer" aria-label="Output" aria-describedby="inputGroup-sizing-default">
                     </div>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">Output</span>
-                    <input type="text" class="form-control" id="show-answer" aria-label="Output" aria-describedby="inputGroup-sizing-default">
-                </div>
-                <div class="text-center mt-5">
-                    <div class="border rounded-3 bg-light p-2 d-inline-block" id="show-state-now">
-                        <p class="my-2">null</p>
+                    <!-- Show State -->
+                    <div class="text-center mt-5">
+                        <div class="border rounded-3 bg-light p-2 d-inline-block" id="show-state-now">
+                            <p class="my-2">null</p>
+                        </div>
                     </div>
-                </div>
-                <div class="bg-secondary mt-4">
-                    <div id="turing_tape" class="rounded-3 d-flex turing-tape overflow-auto flex-nowrap"></div>
+                    <!-- Turing Machine -->
+                    <div class="bg-secondary mt-4 mx-auto">
+                        <div id="turing_tape" class="rounded-3 d-flex turing-tape overflow-auto flex-nowrap"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+        <script src="/js/substraction.js"></script>
+    </body>
+    </html>
