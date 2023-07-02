@@ -9,6 +9,11 @@ Projek ini dikerjakan untuk menyelesaikan salah satu projek mata kuliah yaitu "T
 **Operasi aritmatika dasar yang kami sediakan**
 - <a href="addition.html">Addition</a>
 - <a href="subtraction.html">Subtraction</a>
+- <a href="multiply.html">Multiply</a>
+- <a href="division.html">Division</a>
+- <a href="factorial.html">Factorial</a>
+- <a href="binaryLog.html">Binary Log</a>
+- <a href="power.html">Power</a>
 
 **Created By : Group 3**
 - Rio Saputro (M0521065)
