@@ -166,7 +166,7 @@ body {
     margin-bottom: 10px;
   }
   
-  #turing_tape > * {
+  /* #turing_tape > * {
     color: black;
     background-color: #ffffff;
     padding: 1em;
@@ -175,14 +175,14 @@ body {
     border: 1px solid #ced4da;
     border-radius: 8px;
     transition: color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  }
+  } */
   
   #turing_tape > *:last-child {
     margin-right: 0;
   }
   
   #turing_tape > *:first-child {
-    margin-left: 10px;
+    margin-left: 0px;
   }
   
   #turing_tape > *:only-child {
