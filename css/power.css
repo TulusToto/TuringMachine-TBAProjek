@@ -1,15 +1,44 @@
-
-.turing-tape > *{
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(11, 233, 103, 0.1);
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .turing-tape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .turing-tape > * {
     color: black;
     background-color: white;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     font-size: 14pt;
-    margin: auto;
+    margin: 0 5px;
     border: 1px solid black;
     border-radius: 8px;
-}
-.state-active{
+  }
+  
+  .state-active {
     color: white;
     background-color: black;
     border-radius: 8px;
-}
+  }
+  
