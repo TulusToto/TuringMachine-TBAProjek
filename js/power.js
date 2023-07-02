@@ -1,4 +1,3 @@
-
 var getDomVal = document.getElementById('val1');
 var turingVal = [];
 var turingVal2 = [];
@@ -166,6 +165,8 @@ function step(){
     go(9, 'B', 'B', 'B', 10, 'B', 'B', 'B', 'S', 'L', 'S', 0);
     
     go(11, 'B', 'B', 'B', 12, 'B', 'B', 'B', 'L', 'S', 'S', 0);
+go(11, 'B', 'B', 'B', 11, 'B', 'B', 'B', 'L', 'S', 'S', 0);
+go(11, 'B', '0', 'B', 11, 'B', '0', '0', 'S', 'L', 'R', 0);
 
 
     if(state==8 || state ==10 || state==12){
@@ -220,8 +221,7 @@ function decide(dt1,dt2,dt3){
     }else if(dt3 == 'L'){
         l--;
     }else{
-        l;
-    }
+        l;
+    }
 }
 }
-    
