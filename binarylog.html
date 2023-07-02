@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TM Group3 | Binary Log</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/binaryLog.css">
+    <title>TM Group3 | BinaryLog</title>
+    <style>
+        .turing-tape {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        .turing-tape>* {
+            color: white;
+            background-color: #4caf50;
+            padding: 0.5em 1em;
+            font-size: 14pt;
+            margin: 0 5px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .turing-tape>*:hover {
+            transform: scale(1.1);
+        }
+
+        .state-active {
+            background-color: #ff5722;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
+    <a href="index.html" class="btn btn-primary" style="margin: 2em;">Back</a>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">BinaryLog</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="val1">Input:</label>
+                            <input type="number" id="val1" class="form-control">
+                        </div>
+                        <input class="btn btn-primary p-3 m-2" type="button" id="controller_init" onclick="init()"
+                            value="Submit" />
+                        <button class="btn btn-primary p-3" id="controller_step" type="button"
+                            onclick="step()">Step</button>
+                        <div class="input-group mb-3 p-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Output</span>
+                            <input type="text" class="form-control" id="show-answer" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Turing Tape</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center">
+                            <div class="bg-light p-2 rounded-3 text-center" id="show-state-now" style="width: 240px;">
+                                <p class="my-2">null</p>
+                            </div>
+                        </div>
+
+                        <div class="turing-tape" id="turing_tape">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/binaryLog.js"></script>
 </body>
+
 </html>
